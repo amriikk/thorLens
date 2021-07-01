@@ -44,7 +44,7 @@ function draw() {
   // draw webcam video
   imageMode(CORNER);
   image(video, 0, 0, width, height);
-
+  tint(135, 206, 230)
   if (!latestPrediction) return; // don't draw anything else
   //-----------------------------------
 
