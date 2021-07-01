@@ -3,9 +3,9 @@ let latestPrediction = null;
 let modelIsLoading = true;
 let crownImage;
 
-const FOREHEAD_POINT = 151;
-const LEFT_FORHEAD = 104;
-const RIGHT_FOREHEAD = 333;
+const FOREHEAD_POINT = 155;//151;
+const LEFT_FORHEAD = 150;//104;
+const RIGHT_FOREHEAD = 225;//333;
 
 // p5 function
 function preload() {
@@ -20,7 +20,7 @@ function setup() {
 
   // ml5 function
   let facemesh = ml5.facemesh(video, () => {
-    console.log("Model is ready!");
+    console.log("Model ready!");
     modelIsLoading = false;
   });
 
