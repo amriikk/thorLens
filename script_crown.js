@@ -9,7 +9,7 @@ const RIGHT_FOREHEAD = 225;//333;
 
 // p5 function
 function preload() {
-  crownImage = loadImage("assets/crown.gif");
+  crownImage = loadImage("assets/j-cole.gif");
 }
 
 // p5 function
