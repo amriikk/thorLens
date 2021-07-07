@@ -20,9 +20,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ###### :small_blue_diamond: p5.js
 
-###### :small_blue_diamond: vanilla js
+###### :small_blue_diamond: TensorFlow.js
 
-###### :small_blue_diamond: Snap Lens
+###### :small_blue_diamond: vanilla js
 
 
 ## Preparation + Pseudocode:
