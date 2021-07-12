@@ -29,7 +29,7 @@ function setup() {
     // results is an Array
     // we care about the first object only
     // results[0]
-    // console.log(results[0]);
+    console.log(results[0]);
     latestPrediction = results[0];
   });
 

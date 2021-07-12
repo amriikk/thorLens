@@ -13,4 +13,5 @@ function modelLoaded() {
 
 function draw() {
     image(video, 0, 0)
+    filter(GRAY);
 }

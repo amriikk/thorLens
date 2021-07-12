@@ -31,8 +31,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 :thought_balloon: Draw out the wireframe for the lens
 
-:thought_balloon: Organize Trello board
-
 :thought_balloon: Implement base models
 
 :thought_balloon: Establish GitHub work flow + collaborators
