@@ -21,8 +21,8 @@ function gotPoses(poses) {
         let eY = poses[0].pose.keypoints[1].position.y;
         noseX =  lerp(noseX, nX, 0.5);
         noseY =  lerp(noseY, nY, 0.5);
-        noseX =  lerp(noseX, eX, 0.5);
-        noseY =  lerp(noseY, eY, 0.5);
+        eyeLX =  lerp(eyeLX, eX, 0.5);
+        eyeLY =  lerp(eyeLY, eY, 0.5);
     }
 }
 
@@ -33,9 +33,10 @@ function modelLoaded() {
 function draw() {
     image(video, 0, 0)
     // filter(GRAY);
+    let d = dist(noseX, noseY, eyeLX, eyeLY);
 
     fill(255,0,0);
-    ellipse(noseX, noseY, 30);
+    ellipse(noseX, noseY, d);
 
 
 }
