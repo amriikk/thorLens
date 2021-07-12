@@ -13,8 +13,10 @@ function setup() {
 function gotPoses(poses) {
     console.log(poses);
     if (poses.length > 0) {
-        noseX = poses[0].pose.keypoints[0].position.x;
-        noseY = poses[0].pose.keypoints[0].position.y;
+        let newX = poses[0].pose.keypoints[0].position.x;
+        let newY = poses[0].pose.keypoints[0].position.y;
+        noseX =  lerp(noseX, newX, 0.5);
+        noseY =  lerp(noseY, newY, 0.5);
     }
 }
 
