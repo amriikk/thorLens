@@ -19,6 +19,7 @@ function gotPoses(poses) {
         let nY = poses[0].pose.keypoints[0].position.y;
         let eX = poses[0].pose.keypoints[1].position.x;
         let eY = poses[0].pose.keypoints[1].position.y;
+        // use lerp() to smooth the transition of the points
         noseX =  lerp(noseX, nX, 0.5);
         noseY =  lerp(noseY, nY, 0.5);
         eyeLX =  lerp(eyeLX, eX, 0.5);
@@ -32,7 +33,7 @@ function modelLoaded() {
 
 function draw() {
     image(video, 0, 0)
-    // filter(GRAY);
+    filter(GRAY);
     let d = dist(noseX, noseY, eyeLX, eyeLY);
 
     fill(255,0,0);
