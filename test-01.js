@@ -25,7 +25,7 @@ function draw() {
     filter(GRAY);
 
     fill(255,0,0);
-    ellipse(noseX, noseY, 80);
+    ellipse(noseX, noseY, 30);
 
 
 }
