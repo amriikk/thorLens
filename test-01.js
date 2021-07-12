@@ -12,8 +12,10 @@ function setup() {
 
 function gotPoses(poses) {
     console.log(poses);
-    noseX = poses[0].pose.keypoints[0].position.x;
-    noseY = poses[0].pose.keypoints[0].position.y;
+    if (poses.length > 0) {
+        noseX = poses[0].pose.keypoints[0].position.x;
+        noseY = poses[0].pose.keypoints[0].position.y;
+    }
 }
 
 function modelLoaded() {
@@ -22,7 +24,7 @@ function modelLoaded() {
 
 function draw() {
     image(video, 0, 0)
-    filter(GRAY);
+    // filter(GRAY);
 
     fill(255,0,0);
     ellipse(noseX, noseY, 30);
