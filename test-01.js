@@ -28,7 +28,7 @@ function gotPoses(poses) {
 }
 
 function modelLoaded() {
-    console.log('model loaded!');
+    console.log('model is loaded!');
 }
 
 function draw() {
