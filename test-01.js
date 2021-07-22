@@ -13,7 +13,7 @@ function setup() {
 }
 
 function gotPoses(poses) {
-    console.log(poses);
+    // console.log(poses);
     if (poses.length > 0) {
         let nX = poses[0].pose.keypoints[0].position.x;
         let nY = poses[0].pose.keypoints[0].position.y;
